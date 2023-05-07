@@ -5,7 +5,6 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.far.harvest_homestead.HarvestHomestead;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -22,7 +21,6 @@ public class ModItems {
 
     // add items to a group
     public static void addItemsToItemGroup() {
-        addToItemGroup(ItemGroups.FOOD_AND_DRINK, TOMATO);
         addToItemGroup(ModItemGroups.FOOD_AND_DRINK, TOMATO);
     }
 
