@@ -7,7 +7,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
-public class ModItemGroup {
+public class HarvestHomesteadItemGroup {
     public static ItemGroup FOOD_AND_DRINK;
 
     public static void registerItemGroups() {
