@@ -22,7 +22,8 @@ public class ModItems {
 
     // add items to a group
     public static void addItemsToItemGroup() {
-        addToItemGroup(HarvestHomesteadItemGroup.FOOD_AND_DRINK, TOMATO);
+        addToItemGroup(ItemGroups.FOOD_AND_DRINK, TOMATO);
+        addToItemGroup(ModItemGroups.FOOD_AND_DRINK, TOMATO);
     }
 
     // helper method for adding items to an item group

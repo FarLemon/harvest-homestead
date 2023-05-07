@@ -7,12 +7,12 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
-public class HarvestHomesteadItemGroup {
+public class ModItemGroups {
     public static ItemGroup FOOD_AND_DRINK;
 
     public static void registerItemGroups() {
-        FOOD_AND_DRINK = FabricItemGroup.builder(new Identifier(HarvestHomestead.MOD_ID, "food&drink"))
-            .displayName(Text.translatable("itemgroup.food&drink"))
+        FOOD_AND_DRINK = FabricItemGroup.builder(new Identifier(HarvestHomestead.MOD_ID, "food_and_drink"))
+            .displayName(Text.translatable("itemgroup.food_and_drink"))
             .icon(() -> new ItemStack(ModItems.TOMATO))
             .build();
     }

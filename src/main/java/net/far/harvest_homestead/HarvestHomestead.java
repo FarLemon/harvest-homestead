@@ -1,6 +1,7 @@
 package net.far.harvest_homestead;
 
 import net.fabricmc.api.ModInitializer;
+import net.far.harvest_homestead.item.ModItemGroups;
 import net.far.harvest_homestead.item.ModItems;
 
 import org.slf4j.Logger;
@@ -12,6 +13,7 @@ public class HarvestHomestead implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 	}
 }
