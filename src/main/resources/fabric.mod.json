@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "harvest-homestead",
+  "version": "${version}",
+
+  "name": "Harvest Homestead",
+  "description": "An expanse on the agriculture, livestock, and cooking of Minecraft.",
+  "authors": [
+    "FarLemon"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "MIT License",
+  "icon": "assets/harvest_homestead/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.far.harvest_homestead.HarvestHomestead"
+    ],
+    "client": [
+      "net.far.harvest_homestead.HarvestHomesteadClient"
+    ]
+  },
+  "mixins": [
+    "harvest_homestead.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.19",
+    "fabric-api": "*",
+    "minecraft": "~1.19.4",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
